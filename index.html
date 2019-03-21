@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jeds Html website</title>
+	<!--加入下面这行代码避免出现中文乱码，但是也不是我很清楚这个实现的原理是什么-->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<!--<meta> 元素可提供有关页面的元信息（meta-information），比如针对搜索引擎和更新频度的描述和关键词。-->
+	<!--http-equiv 属性为名称/值对提供了名称。并指示服务器在发送实际的文档之前先在要传送给浏览器的 MIME 文档头部包含名称/值对。-->
+	<!--http-equiv="content-type"设定页面使用的字符集-->
+	<!--content 属性提供了名称/值对中的值。该值可以是任何有效的字符串。-->
+	<!--Content：用于定义用户的浏览器或相关设备如何显示将要加载的数据，或者如何处理将要加载的数据-->
+	<!--MIME：MIME类型就是设定某种扩展名的文件用一种应用程序来打开的方式类型，当该扩展名文件被访问的时候，浏览器会自动使用指定应用程序来打开。多用于指定一些客户端自定义的文件名，以及一些媒体文件打开方式。-->
+	<!--text/html的意思是将文件的content-type设置为text/html的形式，浏览器在获取到这种文件时会自动调用html的解析器对文件进行相应的处理。-->
+</head>
+<body>
+	<!--采用标题1-6来输出文本-->
+	<H1>疯狂Java讲义</H1>
+	<h2>疯狂Android讲义</h2>
+	<h3>疯狂Xml讲义</h3>
+	<h4>疯狂前端讲义</h4>
+	<h5>疯狂前端讲义</h5>
+	<h6>经典Java EE企业应用实战</h6>
+	<!--输出一条水平线-->
+	<!--使用三个span定义文本段-->
+	<hr/>
+	<span>Tomcat</span><span>Jetty</span><span>Resin</span>
+
+	<!--使用q表示一段短的引用文本-->
+	<a name="anchor">
+		<p>疯狂Java的精神是你好</p>
+	</a>
+	<q>疯狂源自梦想,技术成就辉煌</q>
+	<div>
+		<!--使用BlockQuote表示一段长的引用文本-->
+		<blockquote cite="李一山诗集">
+			锦瑟无端五十弦，一弦一柱思华年。<br/>
+			庄生晓梦迷蝴蝶，望帝春心托杜鹃。<br/>
+			沧海月明珠有泪，蓝田日暖玉生烟。<br/>
+			此情可待成追忆，只是当时已惘然。<br/>
+		</blockquote>
+		是唐朝诗人李商隐的代表作，诗中隐藏着一种淡淡的忧伤，让人无法言说，但又难以释怀。
+	</div>
+	<p>
+		<cite>《芙蓉镇》</cite>、<cite>《蓝风筝》</cite>是国内导演拍摄的很有思考深度的两部电影。
+	</p>
+
+	<p>
+		下面代码定义了一个Java类：<br>
+		<code>
+			public class Cat<br>
+			{<br>
+					private int name = "garfield";<br>	
+			}<br>
+		</code>
+	</p>
+
+	<!--pre元素包含的内容是“预格式化”文本-->
+	<pre>
+		public class Cat
+		{
+			private int name="garfield";
+		}
+	</pre>
+
+	<!--在本窗口打开另一个资源-->
+	<a href="http://www.baidu.com">
+		<b>百度官方网站</b>
+	</a>
+
+	<br/>
+
+	<!--在新窗口中打开另一资源-->
+	<a href="http://www.qq.com" target="_parent">
+		<em>QQ官方网站</em>
+	</a>
+
+	<br/>
+
+	<!--为图像增加超链接-->
+	<a href="http://www.taobao.com">
+		<img src="imageforhtml/taobao_logo.jpg" alt="淘宝官方网站">
+	</a>
+
+	<br/>
+
+	<!--基于相对路径指定另一个资源-->
+	<a href="text.html">
+		<B>文本格式化元素</B>
+	</a>
+	<br/>
+	<a href="news:yeeku.html">HTML NewsGroup</a>
+	<br/>
+	<a href="ftp://www.crazyit.org/tomcat.rar">下载Tomcat</a>
+	<br/>
+	<a href="mailto:kongyeeku@163.com">发邮件给我</a>
+
+	<br/>
+
+	<!-- 为图片添加超链接 -->
+	<a href="imageforhtml/taobao_logo.jpg" download="淘宝官方网站图片.jpg" type="image/jpeg">下载淘宝官方图片</a>
+
+	<br/>
+	<br/>
+
+	<a href="anchor.html#anchorFlag">打开另一个anchor.html的锚点定位</a>
+
+	<br/>
+	<br/>
+
+	<a href="#anchor">定位到自身页面的一个锚点</a>
+
+	<!-- 定义无序列表 -->
+	<ul>
+		<li>疯狂Java讲义</li>
+		<li>轻量级Java EE企业应用实战</li>
+		<li>疯狂Android讲义</li>
+	</ul>
+
+	<ol>
+		<li>第一行代码</li>
+		<li>数据库系统概念</li>
+		<li>Unity 3D游戏开发</li>
+	</ol>
+
+	<h2>定义反序的有序列表</h2>
+	<ol reversed="true">
+		<li>疯狂java讲义</li>
+		<li>轻量级Java EE企业应用实战</li>
+		<li>疯狂Android讲义</li>
+	</ol>
+
+	<h2>定义从3开始的有序列表</h2>
+	<ol start="3">
+		<li>疯狂英语</li>
+		<li>轻量级Java EE企业应用实战</li>
+		<li>疯狂Android讲义</li>
+	</ol>
+
+	<ol type="a">
+		<li>Something is the first one</li>
+		<li>Anything is the second one</li>
+		<li>Someone likes you Mr.White</li>
+	</ol>
+
+	<ol type="i" start="4">
+		<li>隐形守护者</li>
+		<li>英语口语</li>
+		<li>使用img元素添加图片</li>
+	</ol>
+
+	<h2>dt定义标题,dd定义解释</h2>
+	<dt>Java</dt>
+	<dd>
+		Java是一门广泛使用的、跨平台的开发者语言<br/>
+	</dd>
+	<dt>疯狂Java体系图书</dt>
+	<dd>疯狂Java体系图书是李刚老师几十年之初创作的一套系统的Java学习图书</dd>
+
+	<h4>普通图片</h4>
+	<img src="imageforhtml/logo.png" alt="萌新Jedlee的Logo"/>
+
+	<br/>
+
+	<h4>定义图片，指定高、宽</h4>
+
+	<img src="imageforhtml/logo.png" width="300" height="120" alt="萌新Jedlee的Logo">
+
+	<!-- 在图片上添加链接 -->
+	<a href="anchor.html">
+		<img src="imageforhtml/taobao_logo.jpg" alt="淘宝Logo">
+	</a>
+
+	<h4>普通图片</h4>	
+	<img src="imageforhtml/logo.png" alt="疯狂Java的Logo">
+
+	<br/>
+
+	<h4>定义图片，指定宽高</h4>
+	<img src="imageforhtml/taobao_logo.jpg" width="300" height="120" alt="淘宝Logo">
+
+	<br/>
+
+	<h4>在图片上添加链接</h4>
+	<a href="http://www.crazyit.org">
+		<img src="imageforhtml/taobao_logo.jpg" alt="淘宝官方Logo">
+	</a>
+
+	<h4>定义图片，使用图片映射</h4>
+	<img src="imageforhtml/taobao_logo.jpg" alt="淘宝logo" width="400" height="120" border="0" usemap="#test">
+	<br/>
+
+	<!-- 定义图片映射 -->
+	<map name="test" id="test">
+		<!-- 为该图片映射定义2个区域 -->
+		<area shape="circle" coords="57,55,25" href="http://www.baidu.com" alt="百度官方网站">
+		<area shape="poly" coords="188,28,185,50,200,74,224,72,246,51" href="http://www.taobao.com">
+	</map>
+
+	<h4>指定ismap属性后</h4>
+
+	<h4>普通图片</h4>
+	<img src="imageforhtml/bud.png" alt="萌芽" width="30%" height="30%" >
+	<br/>
+
+	<h4>定义图片，指定高宽</h4>
+	<img src="imageforhtml/clover.png" alt="三叶草clover" width="300" height="300">
+	<img src="imageforhtml/strawberry.png" alt="草莓" width="300" height="300">
+	<br/>
+
+	<a href="anchor.html">
+	<img src="imageforhtml/flower.png" alt="花瓣" width="400" height="200" ismap>
+	</a>
+
+	<h4>定义图片，使用指定的图片映射</h4>
+	<img src="imageforhtml/leaf.png" alt="树叶" width="400" height="300" usemap="#maptest">
+
+	<map name="maptest">
+		<!-- 为图片映射定义2个区域area -->
+		<area shape="circle" coords="120,50,40" href="http://www.baidu.com" alt="百度官方网站">
+		<area shape="polygon" coords="10,10,110,110,10,110,110,10" href="http://www.taobao.com" alt="淘宝官方网站">
+	</map>
+
+	<table style="width:400px" border="10">
+		<caption><b>疯狂Java体系图书</b></caption>
+		<tr>
+			<th>书名</th>
+			<th>作者</th>
+			<th>价格</th>
+		</tr>
+		<tr>
+			<td rowspan="2">跨2行的单元格</td>
+			<td>普通单元格1</td>
+			<td>普通单元格2</td>
+		</tr>
+		<tr>
+			<td>普通单元格1</td>
+			<td>普通单元格2</td>
+		</tr>
+		<tr>
+			<td>疯狂Java讲义</td>
+			<td>李刚</td>
+			<td>49元</td>
+		</tr>
+		<tr>
+			<td>第一行代码</td>
+			<td>郭林</td>
+			<td>123元</td>
+		</tr>
+		<tr>
+			<td colspan="2">跨两列的单元格</td>
+			<td>普通的单元格</td>
+		</tr>
+	</table>
+
+
+
+</body>
+</html>
