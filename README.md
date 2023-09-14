@@ -4,7 +4,7 @@ This is Jed's website! Welcome!
 
 GitHub Pages is designed to host your personal, organization, or project pages from a GitHub repository.
 
-My site is live at https://happylee1.github.io/jedlee6.github.io/
+My site is live at https://jedlee6.github.io/
 
 You can use the [editor on GitHub](https://github.com/jedlee6/jedlee6.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
