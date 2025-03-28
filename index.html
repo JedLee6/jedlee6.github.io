@@ -16,8 +16,24 @@
 
 	<H1>Jeds Html website</H1>
 	<p>My site is live at https://jedlee6.github.io/</p>
-
-
+	
+    	<h1>Open Android App via Scheme URL</h1>
+    	<div id="inputContainer">
+        	<label for="schemeUrl">Enter Scheme URL:</label><br>
+        	<input type="text" id="schemeUrl" name="schemeUrl" placeholder="e.g., whatsapp://send/?phone=5527981417853&text&type=phone_number&app_absent=0">
+    	</div>
+    	<button id="openAppButton">Open App</button>
+    	<script>
+        	document.getElementById('openAppButton').addEventListener('click', function() {
+            	const url = document.getElementById('schemeUrl').value;
+	            if (url) {
+	                // Try to open the app using the scheme URL
+	                window.location.href = url;
+	            } else {
+	                alert('Please enter a scheme URL.');
+	            }
+	        });
+    	</script>
 
 	<H2>Flutter HelloWorld Playgournd</H2>
 	<iframe src="https://dartpad.dev/?id=0e3e3c07cd1c997a10320ac80ae673bc"  width="80%" height="500" ></iframe>
